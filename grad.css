@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+.home {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(-45deg, #dc7caa, #fc8acd, #820d4d, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  overflow: hidden;
+}
+.home::after {
+  content: "💗 💕 💖 💓 💞 💘 💗 💕 💖 💓 💞 💘";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  opacity: 0.12;
+  line-height: 60px;
+  word-spacing: 40px;
+  white-space: pre-wrap;
+  animation: floatHearts 20s linear infinite;
+  pointer-events: none;
+}
+@keyframes floatHearts {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #fff0f5;
+font-family: 'Dancing script' ,cursive;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40vh;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color:  #f4d6e0;
+    font-family: 'Dancing script' ,cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column;
+  
+}
+img{
+  margin-top: 100px;
+  border-radius: 200px;
+}
+.about h2{
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color:#820d4d
+}
+h3{
+  font-size: 20px;
+  margin-top: 50px;
+  color:rgb(205, 79, 100);
+}
+.skills h2{
+  color: #820d4d;
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+.skill-row {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 500px;
+  
+    text-align: left;
+    line-height: 2;
+}
+
+.tenor-gif-embed {
+    width: 30%;
+    height:30%;
+    float: left;
+    margin-right: 30px;
+}
+.skill-row h3{
+  color: #d63384;}
+/* }
+.touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btn-primary{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+    width: 100px;
+    padding: 12px 25px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.touch h2 {
+  font-size: 100px;
+  color: #c97aa8;
+  margin-bottom: 25px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.btn-primary {
+  background: #ff4da6;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #e63e95;
+  transform: scale(1.05);
+}
+footer{
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(-45deg, #dc7caa, #fc8acd, #820d4d, #ab6497);
+  background-size: 400% 400%;
+  animation: gradientMove 9s ease infinite;
+}
+footer p{
+  font-size: 30px;
+  color: black;
+}
+@media (max-width:767px) {
+  .home{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+  }
+  .home h1 {
+    font-size:60px ;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+margin-right: 25px;
+
+  }
+  .home h2{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+
+  }
+  .about h3{
+    padding-left: 30px;
+    color: #e20674;
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+  .skill-row{
+    width: 100%;
+    margin-left: 60px;
+   margin-bottom: 0;
+
+  }
+  .skills p{
+    padding-right: 35px;
+  }
+ 
+  .touch h2{
+font-size: 100px;
+margin: 0;
+padding: 0%;
+margin-bottom: 10px;
+font-weight: bold;
+color: #f85fac;
+
+  }
+  .btn-primary{
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    color: white
+  }
+  .skills h2{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
